@@ -1,0 +1,56 @@
+//
+   Created by jdixon on 12/2/14.
+
+extends layout
+block content
+   h1=title
+   div.container
+      div.content
+         form.form-horizontal(action='/video-testimonials', method='post', id='mediaForm')
+            div.control-group
+               label.col-sm-2.control-label Featured
+               div.controls
+                  label.radio-inline
+                     input(type="radio", name="default", value="true", checked="")
+                     | True
+                  label.radio-inline
+                     input(type="radio", name="default", value="")
+                     | False
+            div.form-group
+               label.col-sm-2.control-label Business Name
+               div.col-sm-10
+                  input.form-control(type='text', name='title')
+            div.form-group
+               label.col-sm-2.control-label Interviewee Name
+               div.col-sm-10
+                  input.form-control(type='text', name='blockquoteAuthor')
+            div.form-group
+               label.col-sm-2.control-label Interviewee Quote
+               div.col-sm-10
+                  textarea.form-control(name='blockquote', rows=3)
+            div.form-group
+               label.col-sm-2.control-label Summary
+               div.col-sm-10
+                  textarea.form-control(name='summary', rows=3)
+            div.form-group
+               label.col-sm-2.control-label Transcript
+               div.col-sm-10
+                  textarea.form-control(name='transcript', rows=5)
+            div.form-group
+               label.col-sm-2.control-label Video Link
+               div.col-sm-10
+                  input.form-control(type='text', name='videoEmbed')
+            div.form-group
+               label.col-sm-2.control-label Segment Title
+               div.col-sm-10
+                  input.form-control(type='text', name='segmentTitle')
+            div.form-group
+               label.col-sm-2.control-label Super Segment Title
+               div.col-sm-5
+                  select.form-control(name="supersegmentTitle")
+                     option(value="") -- Select Supersegment --
+                     option(value="Legal") Legal
+                     option(value="Automotive") Automotive
+                     option(value="Home Services") Home Services
+            div
+               input.btn.btn-primary(type='submit', value='Submit')
