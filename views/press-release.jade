@@ -1,0 +1,30 @@
+//
+   Created by jdixon on 12/16/14.
+extends layout
+block content
+    h1=title
+    div.container
+        div.content
+            form.form-horizontal(action='/press-release', method='post', id='pressForm')
+                div.form-group
+                    label.col-sm-2.control-label Title
+                    div.col-sm-10
+                        input.form-control(type='text', name='title')
+                div.form-group
+                    label.col-sm-2.control-label Date
+                    div.col-sm-10
+                        input.form-control(type='text', name='date')
+                div.form-group
+                    label.col-sm-2.control-label Location
+                    div.col-sm-10
+                        input.form-control(type='text', name='location')
+                div.form-group
+                    label.col-sm-2.control-label Short Title
+                    div.col-sm-10
+                        input.form-control(type='text', name='shortTitle')
+                div.form-group
+                    label.col-sm-2.control-label Content
+                    div.col-sm-10
+                        textarea.form-control(name='content', rows=3)
+                div
+                    input.btn.btn-primary(type='submit', value='Submit')

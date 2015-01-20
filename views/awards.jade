@@ -1,0 +1,26 @@
+//
+   Created by jdixon on 12/12/14.
+extends layout
+block content
+    h1=title
+    div.container
+        div.content
+            form.form-horizontal(action='/awards', method='post', id='awardForm')
+                div.form-group
+                    label.col-sm-2.control-label Title
+                    div.col-sm-10
+                        input.form-control(type='text', name='title')
+                div.form-group
+                    label.col-sm-2.control-label Description
+                    div.col-sm-10
+                        input.form-control(type='text', name='desc')
+                div.form-group
+                    label.col-sm-2.control-label Image
+                    div.col-sm-10
+                        input.form-control(type='text', name='image')
+                div.form-group
+                    label.col-sm-2.control-label Year
+                    div.col-sm-10
+                        input.form-control(type='text', name='year')
+                div
+                    input.btn.btn-primary(type='submit', value='Submit')
