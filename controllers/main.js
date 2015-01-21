@@ -21,7 +21,6 @@ var formToYaml = function(mediaData) {
 //-------------------------------------
 
 exports.videoTestimonials = function (req, res) {
-  console.log('rendering the page');
   res.render('video-testimonials.jade', { title: 'Video Testimonials'});
 };
 

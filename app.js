@@ -32,25 +32,6 @@ app.use('/users', users);
 
 //Form Submission
 
-//app.post('/video-testimonials', function(req, res) {
-//    var name = req.body.title;
-//    var segmentName = req.body.segmentTitle;
-//    var supersegmentName = req.body.supersegmentTitle;
-//
-//    req.body.name = name.replace(/\s/g, '-').toLowerCase();
-//    req.body.segmentName = segmentName.replace(/\s/g, '-').toLowerCase();
-//    req.body.supersegmentName = supersegmentName.replace(/\s/g, '-').toLowerCase();
-//    req.body.videoEmbed = req.body.videoEmbed.split('/').pop();
-//    req.body.posterFrame = name.replace(/\s/g, '-').toLowerCase();
-//
-//    fs.appendFile('video-testimonials.yml', formToYaml(req.body), function(err) {
-//        if (err) throw err;
-//        console.log('Data appended');
-//    });
-//
-//    res.end();
-//});
-
 app.post('/media-coverage', function(req, res) {
     var content = req.body.content;
     var date = req.body.date;
