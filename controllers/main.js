@@ -41,3 +41,70 @@ exports.videoTestimonialsHandler = function (req, res) {
   });
   res.render('success.jade');
 };
+
+exports.mediaCoverage = function (req, res) {
+  res.render('media-coverage', { title: 'Media Coverage'});
+};
+
+exports.mediaCoverageHandler = function (req, res) {
+  var content = req.body.content;
+  var date = req.body.date;
+  var dateArray = date.split('/');
+
+  req.body.content = '<p>' + content + '</p>';
+  req.body.date = dateArray[2] + '-' + dateArray[0] + '-' + dateArray[1] + 'T05:00:00.000Z';
+
+
+  fs.appendFile('media-coverage.yml', formToYaml(req.body), function(err) {
+    if (err) throw err;
+    console.log('Data appended');
+  });
+
+  res.render('success.jade');
+};
+
+exports.awards = function(req, res){
+  res.render('awards', { title: 'Awards'})
+};
+
+exports.awardsHandler = function(req, res) {
+  var content = req.body.content;
+  var date = req.body.date;
+  var dateArray = date.split('/');
+
+  req.body.content = '<p>' + content + '</p>';
+  req.body.date = dateArray[2] + '-' + dateArray[0] + '-' + dateArray[1] + 'T05:00:00.000Z';
+
+
+  fs.appendFile('awards.yml', formToYaml(req.body), function(err) {
+    if (err) throw err;
+    console.log('Data appended');
+  });
+
+  res.render('success.jade');
+};
+
+exports.pressRelease = function(req, res){
+  res.render('press-release.jade', { title: 'Press Release'})
+};
+
+exports.pressReleaseHandler = function(req, res) {
+  var content = req.body.content;
+  var title = req.body.title;
+  var date = req.body.date;
+  var dateArray = date.split('/');
+  var shortTitle = req.body.shortTitle;
+  var location = req.body.location;
+
+  req.body.name = title.replace(/\s/g, '-').toLowerCase();
+  req.body.content = '<p>' + content + '</p>';
+  req.body.date = dateArray[2] + '-' + dateArray[0] + '-' + dateArray[1] + 'T05:00:00.000Z';
+  req.body.blockquote = shortTitle;
+
+  fs.appendFile('press-release.yml', formToYaml(req.body), function(err) {
+    if (err) throw err;
+    console.log('Data appended');
+  });
+
+  res.render('success.jade');
+};

@@ -9,16 +9,13 @@ router.get('/', function(req, res) {
 router.get('/video-testimonials', controllers.videoTestimonials);
 router.post('/success', controllers.videoTestimonialsHandler);
 
-router.get('/media-coverage', function(req, res) {
-  res.render('media-coverage', { title: 'Media Coverage'});
-});
+router.get('/media-coverage', controllers.mediaCoverage);
+router.post('/success', controllers.mediaCoverageHandler);
 
-router.get('/awards', function(req, res) {
-  res.render('awards', { title: 'Awards'});
-});
+router.get('/awards', controllers.awards);
+router.post('/success', controllers.awardsHandler);
 
-router.get('/press-release', function(req, res) {
-  res.render('press-release', { title: 'Press Releases'});
-});
+router.get('/press-release', controllers.pressRelease);
+router.post('/success', controllers.pressReleaseHandler);
 
 module.exports = router;
