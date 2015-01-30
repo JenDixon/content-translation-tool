@@ -10,12 +10,15 @@ router.get('/video-testimonials', controllers.videoTestimonials);
 router.post('/success', controllers.videoTestimonialsHandler);
 
 router.get('/media-coverage', controllers.mediaCoverage);
-router.post('/success', controllers.mediaCoverageHandler);
+router.post('/success-media-coverage', controllers.mediaCoverageHandler);
 
 router.get('/awards', controllers.awards);
-router.post('/success', controllers.awardsHandler);
+router.post('/success-awards', controllers.awardsHandler);
 
 router.get('/press-release', controllers.pressRelease);
-router.post('/success', controllers.pressReleaseHandler);
+router.post('/success-press-release', controllers.pressHandler);
+
+router.get('/case-studies', controllers.caseStudies);
+router.post('/success-case-studies', controllers.caseStudiesHandler);
 
 module.exports = router;

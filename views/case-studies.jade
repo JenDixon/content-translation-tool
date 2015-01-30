@@ -1,0 +1,64 @@
+//
+   Created by jdixon on 1/30/15.
+extends layout
+block content
+   h1=title
+   div.container
+      div.content
+         form.form-horizontal(action='/success-case-studies', method='post', id='caseStudyForm')
+            div.control-group
+               label.col-sm-2.control-label Featured
+               div.controls
+                  label.radio-inline
+                     input(type="radio", name="default", value="true", checked="")
+                     | True
+                  label.radio-inline
+                     input(type="radio", name="default", value="")
+                     | False
+            div.form-group
+               label.col-sm-2.control-label Business Name
+               div.col-sm-10
+                  input.form-control(type='text', name='subheader')
+
+            div.form-group
+               label.col-sm-2.control-label Segment of the Business
+               div.col-sm-10
+                  input.form-control(type='text', name='title')
+
+            div.form-group
+               label.col-sm-2.control-label Super Segment Title
+               div.col-sm-5
+                  select.form-control(name="supersegmentTitle")
+                     option(value="") -- Select Supersegment --
+                     option(value="Legal") Legal
+                     option(value="Automotive") Automotive
+                     option(value="Home Services") Home Services
+                     option(value="Financial and Real Estate") Financial and Real Estate
+
+            div.form-group
+               label.col-sm-2.control-label Short Description
+               div.col-sm-10
+                  textarea.form-control(name='shortDesc', rows=3)
+
+            div.form-group
+               label.col-sm-2.control-label Website
+               div.col-sm-10
+                  input.form-control(type='text', name='website')
+
+            div.form-group
+               label.col-sm-2.control-label Client Name
+               div.col-sm-10
+                  input.form-control(type='text', name='clientName')
+
+            div.form-group
+               label.col-sm-2.control-label Location
+               div.col-sm-10
+                  input.form-control(type='text', name='location')
+
+            div.form-group
+               label.col-sm-2.control-label Case Study Text
+               div.col-sm-10
+                  textarea.form-control(name='content', rows=5)
+
+            div
+               input.btn.btn-primary(type='submit', value='Submit')

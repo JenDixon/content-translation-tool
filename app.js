@@ -1,4 +1,4 @@
-var fs = require('fs');
+//var fs = require('fs');
 var http = require('http');
 var express = require('express');
 var path = require('path');
@@ -6,16 +6,18 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var yaml = require('yamljs');
-var special = require('special-html');
+//var yaml = require('yamljs');
+//var special = require('special-html');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
-var middleware = require('./middleware/main');
+var routes = require('./routes');
+//var users = require('./routes/users');
+//var middleware = require('./middleware/main');
 
 var app = express();
+module.exports = app;
 
 // view engine setup
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
@@ -28,18 +30,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
 
-
-var formToYaml = function(mediaData) {
-    var yamlString = yaml.stringify(mediaData);
-    var yamlFile = "" +
-      "  -\n" +
-      special(yamlString) +
-      "\n";
-
-    return yamlFile;
-};
+//app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
