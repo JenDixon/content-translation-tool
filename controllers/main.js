@@ -120,15 +120,15 @@ exports.caseStudiesHandler = function(req, res){
   var title = req.body.title;
   var supersegmentTitle = req.body.supersegmentTitle;
   var content = req.body.content;
-  var re = /(\\r\\n)+/;
+  var re = /[\r\n]+/;
   var contentParaBreaks = content.split(re);
+  var newContent ='';
 
   for (var i = 0; i < contentParaBreaks.length; i++) {
-    content += '<p>' + contentParaBreaks[i] + '</p>\n';
-    req.body.content = content;
-    console.log(content);
+    newContent += '<p>' + contentParaBreaks[i] + '</p>\n';
   }
-
+  console.log(newContent);
+  req.body.content = newContent;
   req.body.name = subheader.replace(/\s/g, '-').toLowerCase();
   req.body.segmentName = title.replace(/\s/g, '-').toLowerCase();
   req.body.segmentTitle = title;
