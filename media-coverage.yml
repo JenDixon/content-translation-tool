@@ -66,5 +66,54 @@ title: 'The Ants go Marketing'
 date: '2015-1-9T05:00:00.000Z'
 content: '<p>Lawn & Landscape shares tips from Yodle''s President of Local, Paul Bascobert, on how seasonal business owners can make effective use of the off season by focusing on marketing and advertising.</p>'
 publshedIn: 'Lawn & Landscape'
-publishedInURL: 'http://www.lawnandlandscape.com/ll-010915-Bascobert-marketing-yodle.aspx'
+publishe  -
+        title: '8 Creative Ways to Leverage Positive Online Reviews'
+        date: '2015-1-20T05:00:00.000Z'
+        content: '<p>Yodle co-founder Ben Rubenstein on how to promote positive online reviews to grow your business.</p>'
+        publshedIn: 'The Huffington Post'
+        publishedInURL: 'http://www.huffingtonpost.com/young-entrepreneur-council/8-creative-ways-to-levera_b_6458646.html'
+
+          -
+        title: '10 Bosses Share How to Land That Promotion'
+        date: '2015-1-19T05:00:00.000Z'
+        content: '<p>Tips on how to score a promotion from Yodle co-founder Ben Rubenstein.</p>'
+        publshedIn: 'The Muse'
+        publishedInURL: 'https://www.themuse.com/advice/10-bosses-share-how-to-land-that-promotion'
+
+          -
+        title: 'Henry Schein Practice Solutions Integrates Yodle&#8217;s Lighthouse 360 Platform'
+        date: '2015-1-30T05:00:00.000Z'
+        content: '<p>Details on how Lighthouse 360 integrates with Henry Schein''s Dentrix Enterprise practice management software.</p>'
+        publshedIn: 'Orthodontic Products'
+        publishedInURL: 'http://www.orthodonticproductsonline.com/2015/01/henry-schein-practice-solutions-integrates-yodles-lighthouse-360-platform/'
+
+          -
+        title: 'Henry Schein''s Practice Management System now Integrates with Lighthouse 360'
+        date: '2015-1-29T05:00:00.000Z'
+        content: '<p>Dentaltown covered the news that Henry Schein''s Dentrix practice management system now integrates with Yodle''s Lighthouse 360.</p>'
+        publshedIn: Dentaltown
+        publishedInURL: 'http://www.dentaltown.com/Dentaltown/IndustryNews.aspx?action=DETAILS&rid=9397'
+
+          -
+        title: 'Tech Cos. Show Their Stoke for Super Bowl XLIX '
+        date: '2015-1-29T05:00:00.000Z'
+        content: '<p>Yodle''s Scottsdale office was featured in a roundup of how local tech companies got in the spirit of the Super Bowl.</p>'
+        publshedIn: 'AZ Tech Beat'
+        publishedInURL: 'http://aztechbeat.com/2015/01/az-tech-co-stoked-super-bowl-video/'dInURL: 'http://www.lawnandlandscape.com/ll-010915-Bascobert-marketing-yodle.aspx'
+
+  -
+title: 'Henry Schein''s Practice Management System now Integrates with Lighthouse 360'
+date: '2015-1-29T05:00:00.000Z'
+content: '<p>Yodle''s Scottsdale office was featured in a roundup of how local tech companies got in the spirit of the Super Bowl.</p>'
+publshedIn: 'AZ Tech Beat'
+publishedInURL: 'http://aztechbeat.com/2015/01/az-tech-co-stoked-super-bowl-video/'
+
+
+
+  -
+title: 'It&#8217;s W2 Season &#8211; Are You Ready?'
+date: '2015-02-6T05:00:00.000Z'
+content: '<p>Paul Bascobert, Yodle''s President of Local, offers advice to accountants on how to prepare for tax season.</p>'
+publshedIn: 'Accounting Today'
+publishedInURL: 'http://www.accountingtoday.com/news/tax-season/its-w2-season-226128-are-you-ready-73591-1.html'
 

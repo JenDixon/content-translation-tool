@@ -1,0 +1,4 @@
+TODO: Several submissions of the same kind can be sent at once
+TODO: Change the configuration of the home page - pills, maybe tabs?
+TODO: Refactor the Press Handler controller
+TODO: Media Coverage - All months and days must have 2 digits ex: January 01
